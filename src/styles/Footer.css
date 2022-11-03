@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    padding-top: 10px;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.social-icons img{
+    margin: 0 15px;
+    cursor: pointer;
+}
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    /* margin-top: 2rem; */
+    padding-top: 40px;
+}

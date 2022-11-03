@@ -2,13 +2,13 @@ import React from "react";
 import "../styles/ProfilePage.css";
 // import images 
 import ProfileImage from "../images/profile.jpg";
-import Slack from "../images/slack.png";
-import Github from "../images/github.png";
-import I4G from "../images/I4G.png";
-import Zuri from "../images/zuri.png"
+
+import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 
 export default function ProfilePage() {
+    const navigate = useNavigate();
     return (
         <div className="profile">
             <div className="icon">
@@ -55,29 +55,12 @@ export default function ProfilePage() {
                     title="The designer's guide."
                     >Design Books</a>
                 </div>
-            </div>
-            <footer>
-                <div className="social-icons">
-                    <div>
-                        <img src={Slack} alt="Slack" />
-                    </div>
-                    <div>
-                        <img src={Github} alt="Github" />
-                    </div>
-                </div>
 
-                <div className="logos">
-                    <div>
-                        <img src={Zuri} alt="Zuri" />
-                    </div>
-                    <div>
-                        <p>HNG Internship 9 Frontend Task</p>
-                    </div>
-                    <div>
-                        <img src={I4G} alt="I4G" />
-                    </div>
+                <div className="links">
+                    <button onClick={()=>{navigate("/contact")}}>Contact Me</button>
                 </div>
-            </footer>
+            </div>
+            <Footer/>
         </div>
     )
 }
