@@ -16,7 +16,7 @@ export default function Footer() {
                         <img src={Github} alt="Github" />
                     </div>
                 </div>
-
+                    <hr/>
                 <div className="logos">
                     <div>
                         <img src={Zuri} alt="Zuri" />

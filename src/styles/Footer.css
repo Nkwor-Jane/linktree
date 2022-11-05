@@ -6,7 +6,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
 }
 .social-icons img{
     margin: 0 15px;
@@ -17,6 +17,5 @@ footer{
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
-    /* margin-top: 2rem; */
-    padding-top: 40px;
+    padding-top: 10px;
 }

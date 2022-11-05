@@ -4,11 +4,10 @@ import "../styles/ProfilePage.css";
 import ProfileImage from "../images/profile.jpg";
 
 import Footer from "./Footer";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 export default function ProfilePage() {
-    const navigate = useNavigate();
     return (
         <div className="profile">
             <div className="icon">
@@ -57,7 +56,9 @@ export default function ProfilePage() {
                 </div>
 
                 <div className="links">
-                    <button onClick={()=>{navigate("/contact")}}>Contact Me</button>
+                        <button>
+                        <Link to="/contact">Contact Me</Link>
+                        </button>
                 </div>
             </div>
             <Footer/>

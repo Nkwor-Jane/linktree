@@ -1,33 +1,61 @@
 import React from "react";
-import Footer from "./Footer";
+import "../styles/ContactMe.css";
+import I4G from "../images/I4G.png";
+import Zuri from "../images/zuri.png";
 
 export default function ContactMe () {
   return (
-    <div>
+    <div className="form_body">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
         <div>
-            <form action="">
-                <label htmlFor="first_name">First Name</label>
-                <input type="text" id="first_name" placeholder="Enter your first name" />
+            <form>
+                <div className="minis">
+                    <label htmlFor="first_name" className="labels">First Name</label>
+                    <input required type="text" id="first_name" placeholder="Enter your first name" className="inputs" />
+                </div>
+                
+                <div className="minis">
+                    <label htmlFor="last_name" className="labels">Last Name</label>
+                    <input required type="text" id="last_name" placeholder="Enter your last name"  className="inputs"/>
+                </div>
 
-                <label htmlFor="last_name">Lastt Name</label>
-                <input type="text" id="last_name" placeholder="Enter your last name" />
+                <div className="minis">
+                    <label htmlFor="email" className="labels">Email</label>
+                    <input required type="email" id="email" placeholder="yourname@email.com"  className="inputs"/>
+                </div >
+                
 
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" placeholder="yourname@email.com" />
+                <div className="minis">
+                    <label htmlFor="meaasge" className="labels">Message</label>
+                    <textarea required name="message"  id="message" placeholder="Send me a message and I'll reply you as soon as possible..." className="inputs"/>
+                </div>
 
-                <label htmlFor="meaasge">Message</label>
-                <textarea name="message" id="message" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
-
-                <label htmlFor="agreement">You agree to providing your data to
-                 {/* \{name}\  */}
-                 who may caontact you.</label>
-                <input type="checkbox" name="agreement" id="agreement" />
+                <div className="minis checkbox_section">
+                    <input required type="radio" name="agreement" id="agreement" />
+                    <label htmlFor="agreement">You agree to providing your data to
+                    &#123;name&#125;
+                    who may contact you.</label>
+                </div>
+                
                 <button type="submit" id="btn__submit">Send message</button>
             </form>
         </div>
-        <Footer/>
+        
+        <footer>
+            <hr/>
+            <div className="unique_footer">
+                    <div>
+                        <img src={Zuri} alt="Zuri" />
+                    </div>
+                    <div>
+                        <p>HNG Internship 9 Frontend Task</p>
+                    </div>
+                    <div>
+                        <img src={I4G} alt="I4G" />
+                    </div>
+            </div>
+        </footer>
     </div>
   )
 }
