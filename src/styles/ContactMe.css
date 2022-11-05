@@ -1,9 +1,6 @@
 .form_body{
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
     font-family:Inter, "sans-serif";
+    margin: 4rem;
 }
 
 h1{
@@ -23,6 +20,99 @@ form{
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px 0;
+}
+.labels{
+    color: #344054;
+}
+.inputs{
+    padding: 10px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    display: block;
+    width: 80%;
+    margin: 10px 0;
+    outline: none;
+}
+.names{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+input::placeholder{
+    font-size: 12px;
+    color: #D0D5DD;
+    font-weight: 400;
+}
+textarea::placeholder{
+    font-size: 13px;
+    color: #D0D5DD;
+    font-weight: 400;
+}
+textarea{
+    height: 7rem;
+}
+.minis{
+    padding: 5px 0;
+    width: 100%;
+}
+.checkbox_section{
+    font-size: 15px;
+    color: #D0D5DD;
+    font-weight: 400;
+}
+input[type="radio"]{
+   margin-right: 15px;
+}
+.contact_btn{
+    background: #1570EF;
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 15px 30px;
+    width: 80%;
+    color: #fff;
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: center;
+} 
+.unique_footer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.unique_footer div{
+    padding: 15px 0;
+}
+.unique_footer p{
+    padding: 0;
+}
+@media screen and (max-width: 760px){
+    .form_body{
+        margin: 0;
+    }
+h1{
+    color: #101828;
+    font-size: 2rem;
+    text-align: left;
+    padding: 10px  0;
+}
+p{
+    color: #344054;
+    padding:  10px 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+.names{
+    flex-direction: column;
 }
 .labels{
     color: #344054;
@@ -64,7 +154,7 @@ input[type="radio"]{
    margin-right: 15px;
    border-radius: 50%;
 }
-button{
+.contact_btn{
     background: #1570EF;
     border: 1px solid #1570EF;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -86,4 +176,6 @@ button{
 }
 .unique_footer p{
     padding: 0;
+}
+
 }

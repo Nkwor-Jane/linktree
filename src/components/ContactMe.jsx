@@ -10,14 +10,16 @@ export default function ContactMe () {
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
         <div>
             <form>
-                <div className="minis">
-                    <label htmlFor="first_name" className="labels">First Name</label>
-                    <input required type="text" id="first_name" placeholder="Enter your first name" className="inputs" />
-                </div>
-                
-                <div className="minis">
-                    <label htmlFor="last_name" className="labels">Last Name</label>
-                    <input required type="text" id="last_name" placeholder="Enter your last name"  className="inputs"/>
+                <div className="names">
+                    <div className="minis">
+                        <label htmlFor="first_name" className="labels">First Name</label>
+                        <input required type="text" id="first_name" placeholder="Enter your first name" className="inputs" />
+                    </div>
+                    
+                    <div className="minis">
+                        <label htmlFor="last_name" className="labels">Last Name</label>
+                        <input required type="text" id="last_name" placeholder="Enter your last name"  className="inputs"/>
+                    </div>
                 </div>
 
                 <div className="minis">
@@ -37,8 +39,10 @@ export default function ContactMe () {
                     &#123;name&#125;
                     who may contact you.</label>
                 </div>
-                
-                <button type="submit" id="btn__submit">Send message</button>
+                <div>
+                    
+                </div>
+                <button type="submit" id="btn__submit" className="contact_btn">Send message</button>
             </form>
         </div>
         
