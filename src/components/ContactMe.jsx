@@ -20,26 +20,27 @@ export default function ContactMe () {
                     <div className="names">
                         <div className="minis">
                             <label htmlFor="first_name" className="labels">First Name</label>
-                            <input {...register("first_name", {required: true})} type="text" id="first_name" placeholder="Enter your first name" className="inputs" />
+                            <input {...register("first_name", {required: true})} type="text" id="first_name" placeholder="Enter your first name" 
+                            className={`inputs ${errors.first_name ? 'form-control' : ''}`} />
                             {errors.first_name && <span>First name is required</span>}
                         </div>
                         
                         <div className="minis mini_last_name">
                             <label htmlFor="last_name" className="labels">Last Name</label>
-                            <input {...register("last_name", {required: true})} type="text" id="last_name" placeholder="Enter your last name"  className="inputs"/>
+                            <input {...register("last_name", {required: true})} type="text" id="last_name" placeholder="Enter your last name"  className={`inputs ${errors.last_name ? 'form-control' : ''}`}/>
                             {errors.last_name && <span>Last name is required</span>}
                         </div>
                     </div>
 
                     <div className="minis">
                         <label htmlFor="email" className="labels">Email</label>
-                        <input {...register("email", {required:true})} type="email" id="email" placeholder="yourname@email.com"  className="inputs"/>
+                        <input {...register("email", {required:true})} type="email" id="email" placeholder="yourname@email.com"  className={`inputs ${errors.email ? 'form-control' : ''}`}/>
                         {errors.email && <span>Email address is required</span>}
                     </div >
                     
                     <div className="minis">
                         <label htmlFor="meaasge" className="labels">Message</label>
-                        <textarea {...register("message", {required:true})} name="message"  rows="10" cols="40" id="message" placeholder="Send me a message and I'll reply you as soon as possible..." className="inputs"/>
+                        <textarea {...register("message", {required:true})} name="message"  rows="10" cols="40" id="message" placeholder="Send me a message and I'll reply you as soon as possible..." className={`inputs ${errors.message ? 'form-control' : ''}`}/>
                         {errors.message && <span>Please enter a message.</span>}
                     </div>
 
