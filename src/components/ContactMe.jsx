@@ -7,7 +7,7 @@ import {useForm} from "react-hook-form";
 
 export default function ContactMe () {
     const {register, handleSubmit, formState: {errors}} = useForm();
-    const onSubmit = res => console.log(res)
+    const onSubmit = res => alert("Message sent")
   return (
     <div className="">
         <div className="form_body">
