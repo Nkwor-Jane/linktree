@@ -56,9 +56,7 @@ export default function ProfilePage() {
                 </div>
 
                 <div className="links">
-                        <button>
-                        <Link to="/contact">Contact Me</Link>
-                        </button>
+                        <Link to="/contact" id="contact">Contact Me</Link>
                 </div>
             </div>
             <Footer/>
